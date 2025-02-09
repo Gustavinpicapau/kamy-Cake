@@ -23,6 +23,6 @@ function finalizarCompra() {
     });
     mensagem += '\nTotal: R$ ' + carrinho.reduce((total, item) => total + item.preco, 0);
 
-    const url = `https://wa.me/55279999269303?text=${encodeURIComponent(mensagem)}`;
+    const url = `https://wa.me/5527999269303?text=${encodeURIComponent(mensagem)}`;
     window.open(url, '_blank');
 }
