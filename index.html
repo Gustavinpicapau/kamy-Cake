@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confeitaria Kamy Cake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">Confeitaria Kamy Cake</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#kit-festa">Kit Festa</a></li>
+                <li><a href="#bolos">Bolos</a></li>
+                <li><a href="#toppers">Toppers</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#sobre-nos">Sobre Nós</a></li>
+                <li><a href="#carrinho">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Seções -->
+        <section id="inicio">
+            <h1>Bem-vindo à Confeitaria Kamy Cake</h1>
+            <p>Delicie-se com nossos produtos irresistíveis!</p>
+        </section>
+
+        <section id="kit-festa">
+            <h2>Kit Festa</h2>
+            <div class="produtos">
+                <div class="produto">
+                    <img src="kit-festa.jpg" alt="Kit Festa">
+                    <p>Valor a Combinar - R$ 00,00</p>
+                    <button onclick="adicionarAoCarrinho('Kit Festa', 00)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="bolos">
+            <h2>Bolos</h2>
+            <div class="produtos">
+                <div class="produto">
+                    <img src="bolo-chocolate.jpg" alt="Bolo de Chocolate">
+                    <p>1 Kg - R$ 45,00</p>
+                    <button onclick="adicionarAoCarrinho('1 Kg', 45)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="toppers">
+            <h2>Toppers</h2>
+            <div class="produtos">
+                <div class="produto">
+                    <img src="topper-aniversario.jpg" alt="Topper de Aniversário">
+                    <p>Topper de Aniversário - R$ 30,00</p>
+                    <button onclick="adicionarAoCarrinho('Topper de Aniversário', 30)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos">
+            <h2>Todos os Produtos</h2>
+            <div class="produtos">
+                <div class="produto">
+                    <img src="produto1.jpg" alt="Bom bom de uva">
+                    <p>Bom bom de uva- R$ 12,00</p>
+                    <button onclick="adicionarAoCarrinho('Bom bom de uva', 12)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="produto1.jpg" alt="Cone trufado">
+                    <p>Cone trufado - R$ 15,00</p>
+                    <button onclick="adicionarAoCarrinho('Cone trufado', 15)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="produto1.jpg" alt="Alfajor de doce de leite">
+                    <p>Alfajor de doce de leite - R$ 5,00</p>
+                    <button onclick="adicionarAoCarrinho('Alfajor de doce de leite', 5)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="produto1.jpg" alt="Tortinha de limão">
+                    <p>Tortinha de limão - R$ 10,00</p>
+                    <button onclick="adicionarAoCarrinho('Tortinha de limão', 10)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="produto1.jpg" alt="Bolo no pote">
+                    <p>Bolo no pote - R$ 12,00</p>
+                    <button onclick="adicionarAoCarrinho('Bolo no pote', 12)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="carrinho">
+            <h2>Carrinho</h2>
+            <div id="itens-carrinho">
+                <!-- Itens adicionados ao carrinho aparecerão aqui -->
+            </div>
+            <button onclick="finalizarCompra()">Finalizar Compra</button>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco pelo WhatsApp.</p>
+            <p><a href="https://wa.me/55279999269303" target="_blank">Clique aqui para conversar no WhatsApp</a></p>
+        </section>
+
+        <section id="sobre-nos">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma confeitaria especializada em doces e bolos para todos os tipos de festas e eventos!</p>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Confeitaria Kamy Cake. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
